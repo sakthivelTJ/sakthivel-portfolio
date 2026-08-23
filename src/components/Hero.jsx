@@ -120,7 +120,7 @@ export default function Hero() {
               Contact Me
             </a>
             <a
-              href="/resume.pdf"
+              href="/Sakthivel_T_resume.pdf"
               download
               className="px-8 py-3 text-white font-medium flex items-center gap-2 hover:text-red-400 transition-colors"
             >

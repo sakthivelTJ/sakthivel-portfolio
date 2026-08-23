@@ -36,7 +36,7 @@ export const heroInfo = heroData;
 
 export const aboutData = {
   heading: "Hello!",
-  bio: 'Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Sakthivel T</span>, a Java Full Stack Developer based in Bengaluru, India, dedicated to building secure, scalable, and database-driven web applications using Java, JEE, Hibernate, and MySQL.',
+  bio: 'I\'m <strong class="text-black font-black">Sakthivel T</strong>, a Java Full Stack Developer based in Bengaluru, India, focused on building secure, scalable, and database-driven web applications. My core technologies include Java, JEE, Spring Boot, Hibernate, MySQL, JavaScript, React, HTML, and CSS. I enjoy turning real-world problems into reliable, user-friendly applications while continuously improving my development skills.',
   techStack: ["Java", "JEE", "MySQL"],
 };
 export const aboutInfo = aboutData;
@@ -95,7 +95,7 @@ export const skillsData = {
       skills: [
         { name: "Java JEE", level: 88 },
         { name: "Servlets & JSP", level: 90 },
-        { name: "JDBC", level: 88 },
+        { name: "Spring", level: 88 },
         { name: "Hibernate", level: 82 },
       ],
     },
@@ -122,6 +122,7 @@ export const skillsData = {
         { name: "Apache Tomcat", level: 88 },
         { name: "Git & GitHub", level: 85 },
         { name: "Eclipse IDE", level: 90 },
+        { name: "Railway", level: 78 },
       ],
     },
   ],
