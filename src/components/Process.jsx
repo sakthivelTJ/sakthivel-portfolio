@@ -120,7 +120,7 @@ export default function Process() {
             return (
               <div
                 key={index}
-                className={`relative z-10 w-72 sm:w-80 rounded-4xl border-2 p-2 transition-all duration-700 hover:scale-[1.02] ${positions[index % positions.length]} ${activeCards > index ? gradients[index] : "bg-white border-gray-200 shadow-[0_15px_40px_rgba(0,0,0,0.08)]"}`}
+                className={`relative z-10 w-full max-w-72 sm:w-80 rounded-4xl border-2 p-2 transition-all duration-700 hover:scale-[1.02] ${positions[index % positions.length]} ${activeCards > index ? gradients[index] : "bg-white border-gray-200 shadow-[0_15px_40px_rgba(0,0,0,0.08)]"}`}
                 data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
                 data-aos-delay={(index + 1) * 100}
               >

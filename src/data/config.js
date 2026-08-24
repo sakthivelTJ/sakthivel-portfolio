@@ -184,8 +184,57 @@ export const projects = [
       "DAO Pattern",
       "BCrypt",
     ],
-    links: { github: "https://github.com/sakthivelTJ", demo: null },
+    links: {
+      github: "https://github.com/sakthivelTJ/Food_Delivery_Click_Chow",
+      demo: null,
+    },
     isFlagship: true,
+  },
+  {
+    id: "ai-travel-planner",
+    number: "02",
+    badge: "✈️ AI Web Application",
+    title: "AI Travel Planner",
+    description:
+      "Built an AI-powered travel planning web application that generates personalized, day-wise itineraries from a user's destination, preferences, budget, and trip requirements. Integrated Google Gemini AI for travel recommendations, Flask for backend application logic, and Supabase for authentication and data management through a responsive HTML, CSS, and JavaScript frontend.",
+    techTags: [
+      "Python",
+      "Flask",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Google Gemini AI",
+      "Supabase",
+      "Git",
+      "GitHub",
+    ],
+    links: {
+      github: "https://github.com/sakthivelTJ/AI-TRAVEL-PLANNER",
+      demo: null,
+    },
+  },
+  {
+    id: "explainable-ai-cardiac-diagnosis",
+    number: "03",
+    badge: "🫀 Machine Learning Project",
+    title: "Explainable AI for Cardiac Diagnosis",
+    description:
+      "Developed an AI-based healthcare project for assisting with cardiac disease analysis using Machine Learning, Deep Learning, and Explainable AI techniques. The system analyzes patient and medical data to identify patterns associated with arrhythmia, heart failure, and coronary artery disease, while explaining the important features behind each prediction to improve transparency and trust.",
+    techTags: [
+      "Python",
+      "Machine Learning",
+      "Deep Learning",
+      "Explainable AI",
+      "Data Processing",
+      "Jupyter Notebook",
+      "Git",
+      "GitHub",
+    ],
+    links: {
+      github:
+        "https://github.com/sakthivelTJ/Explainable-AI-For-Cardiac-Diagnosis",
+      demo: null,
+    },
   },
 ];
 

@@ -25,6 +25,7 @@ function App() {
       mirror: true,
       offset: 100,
       easing: "ease-out",
+      disable: () => window.innerWidth < 768,
     });
 
     const refreshTimer = window.setTimeout(() => {

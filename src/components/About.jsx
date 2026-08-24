@@ -2,7 +2,7 @@ import React from "react";
 import { aboutInfo } from "../data/config";
 
 const technologyIcons = [
-  { name: "Java", icon: "https://cdn.simpleicons.org/openjdk/ffffff" },
+  { name: "Java", icon: "/java.svg" },
   { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql/ffffff" },
   { name: "Hibernate", icon: "https://cdn.simpleicons.org/hibernate/ffffff" },
   { name: "Spring", icon: "https://cdn.simpleicons.org/spring/ffffff" },
@@ -27,22 +27,21 @@ export default function About() {
           <path d="M12 0l2.5 9.5L24 12l-9.5 2.5L12 24l-2.5-9.5L0 12l9.5-2.5z" />
         </svg>
       </div>
-
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-        <div className="flex flex-col md:flex-row items-center gap-16 md:gap-24">
+        <div className="flex flex-col md:flex-row items-center gap-12 md:gap-24">
           {/* Left: Polaroid Image */}
           <div
             className="w-full md:w-5/12 flex justify-center md:justify-end"
             data-aos="drop-bounce"
             data-aos-duration="900"
           >
-            <div className="relative mt-24">
+            <div className="relative mt-16 md:mt-24">
               {/* Hanging Mechanics */}
               <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-1 h-32 bg-black/80 z-20"></div>
               <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-8 h-10 bg-zinc-800 rounded z-20 shadow-lg border border-zinc-700"></div>
 
               {/* Card */}
-              <div className="bg-gray-900 rounded-2xl p-3 shadow-2xl shadow-black/50 w-72 h-96 -rotate-3 hover:rotate-0 transition-transform duration-500 origin-top">
+              <div className="bg-gray-900 rounded-2xl p-3 shadow-2xl shadow-black/50 w-64 h-[22rem] sm:w-72 sm:h-96 -rotate-3 hover:rotate-0 transition-transform duration-500 origin-top">
                 <img
                   src="/profile.jpeg"
                   alt="Profile"
@@ -54,7 +53,7 @@ export default function About() {
 
           {/* Right: Content */}
           <div className="w-full md:w-7/12 text-white" data-aos="fade-left">
-            <h2 className="text-5xl md:text-7xl font-black mb-8 tracking-tight">
+            <h2 className="text-4xl sm:text-5xl md:text-7xl font-black mb-8 tracking-tight">
               Hello!
             </h2>
             <div
@@ -63,7 +62,7 @@ export default function About() {
             />
 
             {/* Technology Icons */}
-            <div className="grid grid-cols-3 gap-4 sm:grid-cols-6">
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-6">
               {technologyIcons.map((technology, i) => (
                 <div
                   key={technology.name}
