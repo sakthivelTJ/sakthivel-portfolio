@@ -13,9 +13,9 @@ This repository contains my personal portfolio, showcasing my **technical skills
 ## 🌐 My Portfolio
 
 🔗 **Visit my Portfolio:**
-**[👉 View Portfolio](PASTE_YOUR_PORTFOLIO_LINK_HERE)**
+https://sakthivel-portfolio-sooty.vercel.app/
 
-> Replace `PASTE_YOUR_PORTFOLIO_LINK_HERE` with your actual deployed portfolio URL.
+
 
 ---
 
