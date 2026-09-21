@@ -167,8 +167,33 @@ export const innovationData = {
 
 export const projects = [
   {
-    id: "click-chow",
+    id: "shopsphere",
     number: "01",
+    badge: "🛒 Full Stack E-Commerce Platform",
+    title: "ShopSphere — Full Stack E-Commerce Platform",
+    description:
+      "Engineered an enterprise-grade full-stack e-commerce application using Spring Boot 3, Spring Data JPA, Hibernate, MySQL, and Glassmorphic CSS. Developed dual Customer & Admin portals with real-time revenue analytics dashboards, automated low-stock inventory alerts, multi-variant product management, stateful cart sessions, and SHA-256 secure authentication.",
+    techTags: [
+      "Spring Boot 3",
+      "Java 17",
+      "Spring Data JPA",
+      "Hibernate",
+      "MySQL 8",
+      "Glassmorphism",
+      "JSP / JSTL",
+      "Bootstrap 5",
+      "SHA-256",
+      "Railway",
+    ],
+    links: {
+      github: "https://github.com/sakthivelTJ/ShopSphere",
+      demo: null,
+    },
+    isFlagship: true,
+  },
+  {
+    id: "click-chow",
+    number: "02",
     badge: "🍔 Full Stack Web App",
     title: "Click Chow — Food Delivery App",
     description:
@@ -192,7 +217,7 @@ export const projects = [
   },
   {
     id: "ai-travel-planner",
-    number: "02",
+    number: "03",
     badge: "✈️ AI Web Application",
     title: "AI Travel Planner",
     description:
@@ -213,30 +238,8 @@ export const projects = [
       demo: null,
     },
   },
-  {
-    id: "explainable-ai-cardiac-diagnosis",
-    number: "03",
-    badge: "🫀 Machine Learning Project",
-    title: "Explainable AI for Cardiac Diagnosis",
-    description:
-      "Developed an AI-based healthcare project for assisting with cardiac disease analysis using Machine Learning, Deep Learning, and Explainable AI techniques. The system analyzes patient and medical data to identify patterns associated with arrhythmia, heart failure, and coronary artery disease, while explaining the important features behind each prediction to improve transparency and trust.",
-    techTags: [
-      "Python",
-      "Machine Learning",
-      "Deep Learning",
-      "Explainable AI",
-      "Data Processing",
-      "Jupyter Notebook",
-      "Git",
-      "GitHub",
-    ],
-    links: {
-      github:
-        "https://github.com/sakthivelTJ/Explainable-AI-For-Cardiac-Diagnosis",
-      demo: null,
-    },
-  },
 ];
+
 
 export const experience = [
   {
@@ -244,9 +247,12 @@ export const experience = [
     role: "Full Stack Developer Intern",
     duration: "Feb 2026 – Present",
     skills: [
-      "Building end-to-end web applications using Java, JEE, Servlets, JSP, JDBC, Hibernate, MySQL, and Apache Tomcat",
-      "Developing responsive user interfaces with HTML, CSS, JavaScript using JDBC and DAO design pattern",
-      "Applying secure authentication, session management, debugging, and clean coding practices",
+      "Developed and integrated application features across frontend, backend, and database layers.",
+      "Built backend functionality for authentication, user sessions, data management, and transactional workflows.",
+      "Implemented database-driven features for creating, retrieving, updating, and managing application data.",
+      "Investigated application issues by reproducing errors, identifying root causes, and implementing validated fixes.",
+      "Tested and debugged application functionality to improve reliability, stability, and overall user experience.",
+      "Maintained and improved existing application components while ensuring consistent and reliable functionality.",
     ],
     tech: [
       "Java",

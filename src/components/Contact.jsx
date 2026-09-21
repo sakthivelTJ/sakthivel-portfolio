@@ -39,9 +39,9 @@ export default function Contact() {
         </h1>
       </motion.div>
 
-      <div className="container mx-auto px-6 relative z-10 flex justify-end">
+      <div className="container mx-auto px-6 relative z-10 flex justify-center">
         <div
-          className="bg-linear-to-br from-[#d9163f] via-[#f04432] to-[#ff7043] rounded-3xl p-7 md:p-9 w-full md:max-w-2xl lg:max-w-xl shadow-2xl"
+          className="bg-linear-to-br from-[#d9163f] via-[#f04432] to-[#ff7043] rounded-3xl p-7 md:p-10 w-full max-w-2xl lg:max-w-3xl shadow-2xl"
           data-aos="fade-up"
         >
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
