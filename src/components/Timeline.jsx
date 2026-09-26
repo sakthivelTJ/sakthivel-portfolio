@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { achievements } from "../data/config";
 
 export default function Timeline() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   return (
     <section className="relative bg-[#0a0a0a] text-white py-32 overflow-hidden">
       {/* Wave Divider at Top */}
@@ -38,7 +40,9 @@ export default function Timeline() {
             {achievements?.map((item, idx) => (
               <div
                 key={idx}
-                className={`relative flex flex-col md:flex-row items-center ${idx % 2 === 0 ? "md:flex-row-reverse" : ""}`}
+                className={`relative flex flex-col md:flex-row items-center ${
+                  idx % 2 === 0 ? "md:flex-row-reverse" : ""
+                }`}
                 data-aos={idx % 2 === 0 ? "fade-left" : "fade-right"}
                 data-aos-delay={idx * 100}
               >
@@ -47,9 +51,11 @@ export default function Timeline() {
 
                 {/* Content */}
                 <div
-                  className={`ml-12 md:ml-0 w-full md:w-1/2 ${idx % 2 === 0 ? "md:pl-12" : "md:pr-12"}`}
+                  className={`ml-12 md:ml-0 w-full md:w-1/2 ${
+                    idx % 2 === 0 ? "md:pl-12" : "md:pr-12"
+                  }`}
                 >
-                  <div className="bg-[#111111] border border-white/10 rounded-2xl p-6 hover:border-white/30 transition-colors">
+                  <div className="bg-[#111111] border border-white/10 rounded-2xl p-6 hover:border-white/30 transition-colors shadow-lg">
                     <div className="flex justify-between items-start mb-4">
                       <span className="py-1 px-3 bg-white/10 rounded-full text-xs font-medium text-gray-300">
                         {item.badge || item.tag || "Activity"}
@@ -59,9 +65,19 @@ export default function Timeline() {
                     <p className="text-gray-400 text-sm mb-4">
                       {item.description}
                     </p>
-                    <p className="text-[#ff2a2a] font-medium text-sm">
-                      {item.role}
-                    </p>
+                    <div className="flex justify-between items-center mt-2">
+                      <p className="text-[#ff2a2a] font-medium text-sm">
+                        {item.role}
+                      </p>
+                      {item.image && (
+                        <button
+                          onClick={() => setSelectedImage({ title: item.title, image: item.image })}
+                          className="px-3 py-1 bg-white/10 hover:bg-[#ff2a2a] text-white rounded-lg text-xs font-medium transition-colors flex items-center gap-1.5"
+                        >
+                          <span>📜</span> View Certificate
+                        </button>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -69,6 +85,47 @@ export default function Timeline() {
           </div>
         </div>
       </div>
+
+      {/* Modal Lightbox for Timeline Certificate Images */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 md:p-8 animate-fadeIn"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div
+            className="relative max-w-4xl w-full bg-[#111] border border-white/20 rounded-2xl overflow-hidden shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex justify-between items-center px-6 py-4 border-b border-white/10 bg-black/50">
+              <h3 className="text-lg font-bold text-white">{selectedImage.title}</h3>
+              <div className="flex items-center gap-3">
+                <a
+                  href={selectedImage.image}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 bg-white/10 hover:bg-white/20 text-xs rounded-lg text-white font-medium transition-colors border border-white/10 flex items-center gap-1"
+                >
+                  ↗ Open Original
+                </a>
+                <button
+                  onClick={() => setSelectedImage(null)}
+                  className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center font-bold transition-colors"
+                  aria-label="Close modal"
+                >
+                  ✕
+                </button>
+              </div>
+            </div>
+            <div className="p-4 bg-black max-h-[75vh] overflow-auto flex items-center justify-center">
+              <img
+                src={selectedImage.image}
+                alt={selectedImage.title}
+                className="max-h-[70vh] w-auto rounded-lg shadow-lg object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

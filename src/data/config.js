@@ -274,6 +274,7 @@ export const achievements = [
       "Successfully completed comprehensive training in Full Stack Web Development covering Java, Python, HTML5, CSS3, JavaScript, Spring Framework, Hibernate, and MySQL (Cert No: 17264, Reg No: TAFEB26753).",
     role: "Certified Full Stack Developer",
     badge: "Certification",
+    image: "/certificate(full stack).jpg",
   },
   {
     title: "Certificate of Merit — NIT Trichy (Currents'23)",
@@ -281,6 +282,7 @@ export const achievements = [
       "Awarded Certificate of Merit for participation in Dhruva, a national-level technical symposium organized by NIT Trichy, demonstrating active engagement in technical learning.",
     role: "Participant",
     badge: "Award",
+    image: "/certificate(Dhruva).jpeg",
   },
   {
     title: "B.Tech in AI & Data Science (CGPA: 7.3)",
@@ -297,11 +299,13 @@ export const certifications = {
       name: "Full Stack Web Development — TAP Academy",
       issuer: "TAP Academy (Cert No: 17264)",
       year: "2026",
+      image: "/certificate(full stack).jpg",
     },
     {
       name: "Certificate of Merit — Dhruva, NIT Trichy",
       issuer: "NIT Trichy",
       year: "2023",
+      image: "/certificate(Dhruva).jpeg",
     },
   ],
   viewAllUrl: "https://github.com/sakthivelTJ",
