@@ -269,6 +269,13 @@ export const experience = [
 
 export const achievements = [
   {
+    title: "Full Stack Web Development Certification — TAP Academy",
+    description:
+      "Successfully completed comprehensive training in Full Stack Web Development covering Java, Python, HTML5, CSS3, JavaScript, Spring Framework, Hibernate, and MySQL (Cert No: 17264, Reg No: TAFEB26753).",
+    role: "Certified Full Stack Developer",
+    badge: "Certification",
+  },
+  {
     title: "Certificate of Merit — NIT Trichy (Currents'23)",
     description:
       "Awarded Certificate of Merit for participation in Dhruva, a national-level technical symposium organized by NIT Trichy, demonstrating active engagement in technical learning.",
@@ -286,6 +293,11 @@ export const achievements = [
 
 export const certifications = {
   featured: [
+    {
+      name: "Full Stack Web Development — TAP Academy",
+      issuer: "TAP Academy (Cert No: 17264)",
+      year: "2026",
+    },
     {
       name: "Certificate of Merit — Dhruva, NIT Trichy",
       issuer: "NIT Trichy",
